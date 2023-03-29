@@ -12,7 +12,7 @@ href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </table>
   
  <button onclick="addNewData()">addNewData</button>
-   <button onclick="deleteOlData()">deleteOldData</button>
+   <button onclick="deleteOldData()">deleteOldData</button>
  <script> 
   var d = ["資工系","資工系","資工系","資工系","資工系","資工系"];
 var c = ["123","232","333","444","555","666"]
