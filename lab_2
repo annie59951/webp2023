@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel = "stylesheet"
+href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<h3>資工系選課表</h3>
+<table id = "csie" class = "table table-striped table-hover">
+  <tr>
+    <th>開課單位</th>
+    <th>開課名稱</th>
+    <th>授課老師</th>
+   </tr>
+</table>
+  
+ <button onclick="addNewData()">addNewData</button>
+   <button onclick="deleteOlData()">deleteOldData</button>
+ <script> 
+  var d = ["資工系","資工系","資工系","資工系","資工系","資工系"];
+var c = ["123","232","333","444","555","666"]
+var t = ["111","222","333","444","555","666"]
+
+function addNewData(){
+  var myTable = document.getElementById("csie");
+  var rowCount = c.length;
+  var cellCount = myTable.rows[0].cells.length;
+  for(var i=0;i<rowCount;i++) {
+    var row = myTable.insertRow(-1);
+    row.insertCell(0).innerHTML = d[i];
+    row.insertCell(1).innerHTML = c[i];
+    row.insertCell(2).innerHTML = t[i];
+    console.log(d[i],c[i],t[i]);
+  }
+}
+function deleteOldData(){
+  var myTable = document.getElementById("csie").deleteRow[0];
+}
+   </script>
